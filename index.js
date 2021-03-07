@@ -7,9 +7,10 @@ const maxDistanceInMiles = 50;
 const myLocation = {
     lat: 41.7711197,
     lon: -88.0890588,
+    state: `IL`,
 };
 
-const getAllWalgreens = async () => await axios.get(`https://www.vaccinespotter.org/api/v0/stores/IL/walgreens.json`);
+const getAllWalgreens = async () => await axios.get(`https://www.vaccinespotter.org/api/v0/stores/${myLocation.state}/walgreens.json`);
 
 // adapted from https://www.geodatasource.com/developers/javascript
 const calculateDistance = (lat1, lon1, lat2, lon2, unit) => {
