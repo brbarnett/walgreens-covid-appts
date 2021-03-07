@@ -14,5 +14,6 @@ node index
 ```
 
 ## Example results
+This script returns results within your max distance threshold, sorted by the closest locations first.
 
 ![Results](results.jpg)
