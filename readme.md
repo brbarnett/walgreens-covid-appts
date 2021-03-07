@@ -9,3 +9,7 @@ yarn install
 
 node index
 ```
+
+## Example results
+
+![Results](results.jpg)
